@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Logo from "./Logo";
 
 const links = [
   { label: "Events", href: "#events" },
@@ -17,9 +18,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-full bg-bmb-gold flex items-center justify-center text-bmb-black font-display font-bold text-lg group-hover:scale-110 transition-transform">
-            B
-          </div>
+          <Logo size={48} className="group-hover:scale-105 transition-transform" />
           <div className="hidden sm:block">
             <p className="font-display text-lg leading-tight tracking-wide">
               Black Market

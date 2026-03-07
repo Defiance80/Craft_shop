@@ -1,3 +1,5 @@
+import Logo from "./Logo";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -12,6 +14,11 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-bmb-black/70 via-bmb-black/50 to-bmb-black" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        {/* Logo */}
+        <div className="animate-fade-up mb-6">
+          <Logo size={100} className="mx-auto" />
+        </div>
+
         {/* Badge */}
         <div className="animate-fade-up inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-bmb-gold/30 bg-bmb-gold/5 mb-8">
           <span className="w-2 h-2 rounded-full bg-bmb-gold animate-pulse" />

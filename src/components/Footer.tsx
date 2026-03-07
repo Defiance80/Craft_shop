@@ -1,3 +1,5 @@
+import Logo from "./Logo";
+
 export default function Footer() {
   return (
     <footer id="contact" className="bg-bmb-black border-t border-white/5 pt-16 pb-8">
@@ -6,9 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-bmb-gold flex items-center justify-center text-bmb-black font-display font-bold text-lg">
-                B
-              </div>
+              <Logo size={56} />
               <div>
                 <p className="font-display text-lg leading-tight">
                   Black Market
