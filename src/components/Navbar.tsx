@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Logo from "./Logo";
 
 const links = [
   { label: "Events", href: "#events" },
@@ -18,15 +17,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <Logo size={48} className="group-hover:scale-105 transition-transform" />
-          <div className="hidden sm:block">
-            <p className="font-display text-lg leading-tight tracking-wide">
-              Black Market
-            </p>
-            <p className="text-[10px] uppercase tracking-[0.3em] text-bmb-gold">
-              Brewing Co.
-            </p>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/bmb-logo-mobile.svg" alt="Black Market Brewing Co." className="h-10 group-hover:scale-105 transition-transform" />
         </a>
 
         {/* Desktop links */}

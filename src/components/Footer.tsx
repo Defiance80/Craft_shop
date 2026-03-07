@@ -1,5 +1,3 @@
-import Logo from "./Logo";
-
 export default function Footer() {
   return (
     <footer id="contact" className="bg-bmb-black border-t border-white/5 pt-16 pb-8">
@@ -7,16 +5,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <Logo size={56} />
-              <div>
-                <p className="font-display text-lg leading-tight">
-                  Black Market
-                </p>
-                <p className="text-[10px] uppercase tracking-[0.3em] text-bmb-gold">
-                  Brewing Co.
-                </p>
-              </div>
+            <div className="mb-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/bmb-logo-stack.svg" alt="Black Market Brewing Co." className="h-16" />
             </div>
             <p className="text-bmb-muted text-sm leading-relaxed max-w-xs">
               Independently owned craft brewery in the heart of Temecula.
