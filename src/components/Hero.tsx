@@ -15,7 +15,7 @@ export default function Hero() {
         {/* Logo */}
         <div className="animate-fade-up mb-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/bmb-logo-stack.svg" alt="Black Market Brewing Co." className="h-24 mx-auto drop-shadow-2xl" />
+          <img src="/bmb-logo-outer.svg" alt="Black Market Brewing Co." className="h-32 mx-auto drop-shadow-2xl" />
         </div>
 
         {/* Badge */}
