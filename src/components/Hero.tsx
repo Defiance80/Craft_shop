@@ -1,3 +1,5 @@
+import Logo from "./Logo";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -14,8 +16,7 @@ export default function Hero() {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Logo */}
         <div className="animate-fade-up mb-6">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/bmb-logo-outer.svg" alt="Black Market Brewing Co." className="h-32 mx-auto drop-shadow-2xl" />
+          <Logo size={100} className="mx-auto" />
         </div>
 
         {/* Badge */}
